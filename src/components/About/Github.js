@@ -13,7 +13,7 @@ function Github() {
     grade0: "#ecd9fc",
   };
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+    <Row style={{ justifyContent: "center", paddingBottom: "100px" }}>
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
         Days I <strong className="purple">Code</strong>
       </h1>
@@ -22,7 +22,7 @@ function Github() {
         blockSize={15}
         blockMargin={5}
         theme={colourTheme}
-        fontSize={16}
+        fontSize={25}
       />
     </Row>
   );

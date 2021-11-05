@@ -10,6 +10,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Contact from "./components/Contact/Contact";
+import Designs from "./components/Designs/Designs";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -29,6 +30,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/project" component={Projects} />
+          <Route path="/design" component={Designs} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </Switch>

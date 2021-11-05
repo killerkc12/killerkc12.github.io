@@ -3,10 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import { DiCss3, DiHtml5, DiJava, DiNodejsSmall, DiReact } from "react-icons/di";
-import { SiBootstrap, SiMongodb, SiMysql, SiPhp, SiPostgresql } from "react-icons/si";
+import { SiBootstrap, SiMongodb, SiMysql, SiPhp, SiPostgresql, SiSocketdotio } from "react-icons/si";
 import { Icon } from '@iconify/react';
 import hibernateIcon from '@iconify-icons/simple-icons/hibernate';
 import expressIcon from '@iconify-icons/simple-icons/express';
+
+import oas from '../../Assets/projects/online admission system.png'
+import wma from '../../Assets/projects/web meeting appliction.png'
+import instaClone from '../../Assets/projects/insta-clone.png'
 
 function Projects() {
 
@@ -25,6 +29,24 @@ function Projects() {
             <ProjectCard
               imgPath= {false}
               isHosted={false}
+              imgPath = {wma}
+              title="Web Meeting Application"
+              tech1 = {<DiReact/>}
+              tech2 = {<DiNodejsSmall/>}
+              tech3 = {<SiSocketdotio/>}
+              description="
+              •Establish the realtime meeting for two or more peoples.
+              •Features are Audio and Video Control, Realtime Chat between all people in the room.
+              •Screen Sharing, List of peoples in the room.
+              •User can apply for more than one courses and manage their details"
+              link="https://web-meeting-application.herokuapp.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath= {false}
+              isHosted={false}
+              imgPath = {oas}
               title="Online Admission System"
               tech1 = {<SiPhp/>}
               tech2 = {<SiMysql/>}
@@ -36,25 +58,9 @@ function Projects() {
               link="https://github.com/killerkc12/Online-Admission-System-PHP-MYSQL"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={false}
-              isHosted={false}
-              title="To-Do App"
-              tech1 = {<DiJava/>}
-              tech2 = {<Icon icon={hibernateIcon} />}
-              tech3 = {<SiPostgresql/>}
-              tech4 = {<DiHtml5/>}
-              tech5 = {<DiCss3/>}
-              description="The user could manage him to do things."
-              link="https://github.com/killerkc12/ToDoApp-JAVA-Servlet-Hibernate-Webapp"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={false}
+              imgPath={instaClone}
               isHosted="https://insta-clone-mern-app.herokuapp.com"
               title="Instagram Clone Web App"
               tech1 = {<DiReact/>}
@@ -65,8 +71,6 @@ function Projects() {
               link="https://github.com/killerkc12/insta-clone-MERN"
             />
           </Col>
-
-          
         </Row>
       </Container>
     </Container>

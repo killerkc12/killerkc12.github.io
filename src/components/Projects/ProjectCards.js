@@ -5,6 +5,10 @@ import { BiLinkExternal } from "react-icons/bi";
 import { Row, Col } from "react-bootstrap";
 import { VscCode } from "react-icons/vsc";
 
+
+import {BsGithub} from 'react-icons/bs'
+import { IoMdRocket } from 'react-icons/io'
+
 function ProjectCards(props) {
   
   const tech1 = props.tech1
@@ -14,15 +18,15 @@ function ProjectCards(props) {
   const tech5 = props.tech5
 
   return (
-    <Card className="project-card-view">
+    <div className="project-card-view">
       {
         props.imgPath ?
-        <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+        <img  src={props.imgPath} alt="card-img" width="300" height=""/>
         : ""
       }
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <div className="project__body">
+        <h5 style={{padding: "10px"}}>{props.title}</h5>
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
           {
             tech1 ? (
               <Col xs={4} md={2} className="tech-project-icons">
@@ -69,31 +73,29 @@ function ProjectCards(props) {
                 ) : ""
           }
         </Row>
-        <Row style={{marginBottom:"50px"}}>
-          <Col>
-            <Button variant="primary" href={props.link} target="_blank">
-              <BiLinkExternal /> &nbsp;
-              {<VscCode/>}
-            </Button>
-          </Col>
-          <Col>
-            {
-              props.isHosted ?
-              (
-                <Button variant="primary" href={props.isHosted} target="_blank">
-                  <BiLinkExternal /> &nbsp;
-                  {/* {"hosted Link"} */}
-                </Button>
-              ) : ""
-            }
-          </Col>
-        </Row>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-        
-      </Card.Body>
-    </Card>
+        <Row className="design__bottom" style={{paddingBottom: "10px"}}>
+                <Col>
+                    <a href={props.link} target="_blank">
+                        <button>
+                            <BsGithub/>   Github
+                        </button>
+                    </a>
+                </Col>
+                {
+                  props.isHosted ?
+                  (
+                    <Col>
+                    <a href={props.isHosted} target="_blank">
+                        <button>
+                            <IoMdRocket/>   Hosted
+                        </button>
+                    </a>
+                </Col>
+                  ) : ""
+                }
+            </Row>
+      </div>
+    </div>
   );
 }
 export default ProjectCards;

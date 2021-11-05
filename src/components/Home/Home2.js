@@ -27,7 +27,7 @@ function Home2() {
                 <b className="purple">Web Technologies and Products </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  Machine Learning and Natural Launguage Processing.
+                  Machine Learning.
                 </b>
               </i>
               <br />
@@ -42,7 +42,7 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js ans Next.js</b>
+                <b className="purple"> React.js.</b>
               </i>
             </p>
           </Col>

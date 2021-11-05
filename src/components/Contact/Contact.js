@@ -46,7 +46,7 @@ function Contact() {
             <Container fluid className="contact-section" >
             <Particle/>
                 <Container>
-                    <Row style={{ padding: "10px", paddingTop: "100px", marginBottom:"200px"}} >
+                    <Row style={{ padding: "10px", paddingTop: "10px", marginBottom:"50px"}} >
                         <Col 
                         md={7}
                         >
