@@ -10,17 +10,24 @@
     background: #fff;
     color: var(--imp-back-color);
     font-weight: bold;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     transform: scale(1.1);
-}
-
-.contact-section h2 {
-
 }
 
 .form__container {
     padding: 10px 50px;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+.Contact__map {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    /* border: 1px solid #fff; */
+    border-radius: 10px;
     margin-bottom: 50px;
     box-shadow: 0px 0px 10px #fff;
 }

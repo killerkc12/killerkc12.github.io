@@ -72,10 +72,8 @@ function Contact() {
                             </div>
                         </Col>
                         <Col 
-                        md={6} style={{padding:"0 50px", marginBottom:"50px"}}
-                        >
-                            <div style={{height:"70vh"}}><SimpleMap /></div>
-                            
+                        md={6} style={{padding:"0 50px", marginBottom:"50px"}}>
+                            <div className="Contact__map"><SimpleMap /></div>
                         </Col>
                     </Row>
                 </Container>
