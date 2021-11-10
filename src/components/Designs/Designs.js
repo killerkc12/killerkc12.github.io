@@ -10,6 +10,7 @@ import expressIcon from '@iconify-icons/simple-icons/express';
 import oas from '../../Assets/projects/online admission system.png'
 import wma from '../../Assets/projects/web meeting appliction.png'
 import DesignCards from "./DesignCards";
+import './Designs.css'
 
 import FoodHome from '../../Assets/Design/Food/home.png'
 import FoodExpert from '../../Assets/Design/Food/expert.png'
@@ -29,12 +30,12 @@ function Projects() {
           Responsive <strong className="purple">Website Designs </strong>
         </h1>
         <Row>
-          <Col>
+          <Col md={6}>
               <DesignCards name="Food" img1={FoodHome} img2={FoodExpert} img3={FoodMenu} img4={FoodTestimonials}
                 github="https://github.com/killerkc12/Food" hosted="https://killerkc12.github.io/Food/"
               />
           </Col>
-          <Col>
+          <Col md={6}>
               <DesignCards name="Starbucks" img1={StarbucksHome}
                 github="https://github.com/killerkc12/Starbucks" hosted="https://killerkc12.github.io/Starbucks/"
               />

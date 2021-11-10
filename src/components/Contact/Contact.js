@@ -5,6 +5,7 @@ import SimpleMap from './SimpleMap'
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+import './Contact.css'
 
 function Contact() {
 
@@ -46,32 +47,35 @@ function Contact() {
             <Container fluid className="contact-section" >
             <Particle/>
                 <Container>
-                    <Row style={{ padding: "10px", paddingTop: "10px", marginBottom:"50px"}} >
-                        <Col 
-                        md={7}
-                        >
-                            <div style={{height:"50vh"}}><SimpleMap /></div>
-                            
+                <h1 className="project-heading">
+                    <strong className="purple">Contact </strong> Me
+                </h1>
+                    <Row style={{marginBottom:"10px"}} >
+                        <Col md={6}>
+                            <div className="form__container">
+                                <Form onSubmit={e => {handleSubmit(e)}}>
+                                    <Form.Group controlId="exampleForm.ControlInput1">
+                                        <Form.Label>Name</Form.Label>
+                                        <Form.Control size="md" type="text" onChange={e=>setName(e.target.value)} placeholder="Enter you Name" />
+                                    </Form.Group>
+                                    <Form.Group controlId="exampleForm.ControlInput1">
+                                        <Form.Label>Email address</Form.Label>
+                                        <Form.Control size="md" type="email" onChange={e=>setEmail(e.target.value)} placeholder="Enter you Email" />
+                                    </Form.Group>
+                                    <Form.Group controlId="exampleForm.ControlTextarea1">
+                                        <Form.Label>Message </Form.Label>
+                                        <Form.Control size="md" as="textarea" rows={4} onChange={e=>setMessage(e.target.value)} placeholder="Enter you Message"  />
+                                    </Form.Group>
+                                    <input type="submit" className="send__button" value="Send"/>
+                                    <ToastContainer/>
+                                </Form>
+                            </div>
                         </Col>
-                        <Col md={5}>
-                            <Form onSubmit={e => {handleSubmit(e)}}>
-                                <Form.Group controlId="exampleForm.ControlInput1">
-                                    <Form.Label>Name</Form.Label>
-                                    <Form.Control size="lg" type="text" onChange={e=>setName(e.target.value)} placeholder="Enter you Name" />
-                                </Form.Group>
-                                <Form.Group controlId="exampleForm.ControlInput1">
-                                    <Form.Label>Email address</Form.Label>
-                                    <Form.Control size="lg" type="email" onChange={e=>setEmail(e.target.value)} placeholder="Enter you Email" />
-                                </Form.Group>
-                                <Form.Group controlId="exampleForm.ControlTextarea1">
-                                    <Form.Label>Message </Form.Label>
-                                    <Form.Control size="lg" as="textarea" rows={5} onChange={e=>setMessage(e.target.value)} placeholder="Enter you Message"  />
-                                </Form.Group>
-                                <Button variant="primary" type="submit">
-                                    Submit
-                                </Button>
-                                <ToastContainer/>
-                            </Form>
+                        <Col 
+                        md={6} style={{padding:"0 50px", marginBottom:"50px"}}
+                        >
+                            <div style={{height:"70vh"}}><SimpleMap /></div>
+                            
                         </Col>
                     </Row>
                 </Container>

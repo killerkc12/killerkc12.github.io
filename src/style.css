@@ -520,7 +520,7 @@ html {
 
 .contact-section{
   position: relative !important;
-  padding-top: 110px !important;
+  padding-top: 80px !important;
   padding-bottom: 30px !important;
   background-color: var(--imp-back-color);
   /* background-image: var(--section-background-color) !important; */
@@ -531,4 +531,4 @@ html {
   .contact-section {
     padding-bottom: 70px !important;
   }
-}
+ }
