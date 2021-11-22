@@ -1,9 +1,5 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { BiLinkExternal } from "react-icons/bi";
 import { Row, Col } from "react-bootstrap";
-import { VscCode } from "react-icons/vsc";
 
 
 import {BsGithub} from 'react-icons/bs'
@@ -75,7 +71,7 @@ function ProjectCards(props) {
         </Row>
         <Row className="design__bottom" style={{paddingBottom: "10px"}}>
                 <Col>
-                    <a href={props.link} target="_blank">
+                    <a href={props.link} target="blank">
                         <button>
                             <BsGithub/>   Github
                         </button>
@@ -85,7 +81,7 @@ function ProjectCards(props) {
                   props.isHosted ?
                   (
                     <Col>
-                    <a href={props.isHosted} target="_blank">
+                    <a href={props.isHosted} target="blank">
                         <button>
                             <IoMdRocket/>   Hosted
                         </button>

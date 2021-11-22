@@ -1,14 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import { DiCss3, DiHtml5, DiJava, DiNodejsSmall, DiReact } from "react-icons/di";
-import { SiBootstrap, SiMongodb, SiMysql, SiPhp, SiPostgresql, SiSocketdotio } from "react-icons/si";
-import { Icon } from '@iconify/react';
-import hibernateIcon from '@iconify-icons/simple-icons/hibernate';
-import expressIcon from '@iconify-icons/simple-icons/express';
-
-import oas from '../../Assets/projects/online admission system.png'
-import wma from '../../Assets/projects/web meeting appliction.png'
 import DesignCards from "./DesignCards";
 import './Designs.css'
 

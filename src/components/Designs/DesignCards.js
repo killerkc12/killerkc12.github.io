@@ -70,14 +70,14 @@ const DesignCards = (data) => {
             </Carousel>
             <Row className="design__bottom">
                 <Col>
-                    <a href={data.github} target="_blank">
+                    <a href={data.github} target="blank">
                         <button>
                             <BsGithub/>   Github
                         </button>
                     </a>
                 </Col>
                 <Col>
-                    <a href={data.hosted} target="_blank">
+                    <a href={data.hosted} target="blank">
                         <button>
                             <IoMdRocket/>   Hosted
                         </button>

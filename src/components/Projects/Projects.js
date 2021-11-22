@@ -2,10 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import { DiCss3, DiHtml5, DiJava, DiNodejsSmall, DiReact } from "react-icons/di";
-import { SiBootstrap, SiMongodb, SiMysql, SiPhp, SiPostgresql, SiSocketdotio } from "react-icons/si";
+import { DiCss3, DiHtml5, DiNodejsSmall, DiReact } from "react-icons/di";
+import { SiBootstrap, SiMongodb, SiMysql, SiPhp, SiSocketdotio } from "react-icons/si";
 import { Icon } from '@iconify/react';
-import hibernateIcon from '@iconify-icons/simple-icons/hibernate';
 import expressIcon from '@iconify-icons/simple-icons/express';
 
 import oas from '../../Assets/projects/online admission system.png'
@@ -27,7 +26,6 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath= {false}
               isHosted={false}
               imgPath = {wma}
               title="Web Meeting Application"
@@ -44,7 +42,6 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath= {false}
               isHosted={false}
               imgPath = {oas}
               title="Online Admission System"
