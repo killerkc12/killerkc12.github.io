@@ -357,6 +357,7 @@ html {
 /* --------- */
 .project-section {
   position: relative !important;
+  min-height: 100vh;
   padding-top: 100px !important;
   padding-bottom: 30px !important;
   background-color: var(--imp-back-color);
@@ -395,8 +396,8 @@ html {
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
+  transition: all 0.5s ease 0s !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 1px var(--imp-text-color) !important;
 }
 
 .project-card-view img {
@@ -529,6 +530,7 @@ html {
 
 .contact-section{
   position: relative !important;
+  min-height: 100vh;
   padding-top: 80px !important;
   padding-bottom: 30px !important;
   background-color: var(--imp-back-color);
