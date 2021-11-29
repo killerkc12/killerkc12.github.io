@@ -26,7 +26,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              isHosted={false}
+              isHosted= "https://web-meeting-application.herokuapp.com/"
               imgPath = {wma}
               title="Web Meeting Application"
               tech1 = {<DiReact/>}
@@ -37,7 +37,7 @@ function Projects() {
               •Features are Audio and Video Control, Realtime Chat between all people in the room.
               •Screen Sharing, List of peoples in the room.
               •User can apply for more than one courses and manage their details"
-              link="https://web-meeting-application.herokuapp.com/"
+              link="https://github.com/killerkc12/Web-Meeting-Application"
             />
           </Col>
           <Col md={4} className="project-card">
