@@ -11,8 +11,15 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-back-color: #f50057;
+  /* --imp-back-color: #f50057; */
   --imp-text-color: rgb(10, 4, 22);
+  /* --white-color: #fff; */
+  --black-color: #000;
+
+  --white-color: #f50057;
+  --imp-back-color: #fff;
+
+
 }
 
 .purple {
@@ -40,13 +47,13 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--image-gradient);
+  background: var(--white-color);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #fff;
+  background: var(--white-color);
 }
 
 /* Scroll bar end  */
@@ -57,7 +64,7 @@ html {
 .sticky {
   background-color: var(--imp-back-color) !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px #c20045 !important;
+  box-shadow: 0px 0px 10px 0px var(--black-color) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -131,7 +138,7 @@ html {
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color: var(--white-color) !important;
 }
 
 .logo {
@@ -140,7 +147,7 @@ html {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: var(--white-color) !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -174,7 +181,7 @@ html {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #fff;
+  background: var(--white-color);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -247,7 +254,7 @@ html {
 
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  color: var(--white-color);
   text-align: left;
 }
 
@@ -288,7 +295,7 @@ html {
 }
 
 .home-about-description {
-  color: white !important;
+  color: var(--white-color) !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -306,7 +313,11 @@ html {
   padding-right: 15px;
   padding-bottom: 5px;
   padding-left: 15px;
-  color: #000 !important;
+  color: var(--black-color) !important;
+}
+
+.social-icons a {
+  color: var(--white-color) !important;
 }
 
 .social-icons:hover {
@@ -321,9 +332,10 @@ html {
 /* --------- */
 .footer {
   position: fixed;
-  background-color: rgb(10, 4, 22);
+  background-color: var(--imp-back-color);
   bottom: 0 !important;
   padding: 5px;
+  box-shadow:4px 4px 4px 4px var(--black-color);
   /* padding-top: 10px !important; */
   /* padding-bottom: 8px !important ; */
 }
@@ -347,7 +359,7 @@ html {
 
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  color: var(--black-color) !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -386,7 +398,7 @@ html {
 
 .project-card-view {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  color: white !important;
+  color: var(--white-color) !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.3s ease 0s !important;
@@ -420,13 +432,13 @@ html {
 }
 
 .btn-primary {
-  color: #fff !important;
+  color: var(--white-color) !important;
   background-color: #623686 !important;
   border-color: #623686 !important;
 }
 
 .btn-primary:hover {
-  color: #fff !important;
+  color: var(--white-color) !important;
   background-color: #6d20c5d7 !important;
   border-color: #6d20c5d7 !important;
 }
@@ -435,7 +447,7 @@ html {
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
+  color: var(--white-color) !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -451,7 +463,7 @@ html {
   padding-bottom: 30px !important;
   background-color: var(--imp-back-color);
   /* background-image: var(--section-background-color) !important; */
-  color: white !important;
+  color: var(--white-color) !important;
 }
 
 .tech-icons {
@@ -509,7 +521,7 @@ html {
 
 .quote-card-view {
   border: none !important;
-  color: white !important;
+  color: var(--white-color) !important;
   background-color: transparent !important;
 }
 
@@ -535,7 +547,7 @@ html {
   padding-bottom: 30px !important;
   background-color: var(--imp-back-color);
   /* background-image: var(--section-background-color) !important; */
-  color: white !important;
+  color: var(--white-text) !important;
 }
 
 @media (max-width: 768px) {

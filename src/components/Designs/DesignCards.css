@@ -28,7 +28,7 @@
 }
 
 .design__bottom button {
-    background: #fff;
+    background: var(--white-color);
     color: var(--imp-back-color);
     font-weight:600;
     border: none;
@@ -41,6 +41,6 @@
 
 .design__bottom button:hover {
     background: var(--imp-back-color);
-    color: #fff;
-    border: 1px solid #fff;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
 }

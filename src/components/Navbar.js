@@ -46,7 +46,6 @@ function NavBar() {
               <a
                 href="https://github.com/killerkc12"
                 target="blank"
-                style={{ color: "white" }}
               >
                 <AiFillGithub />
               </a>
@@ -55,7 +54,6 @@ function NavBar() {
               <a
                 href="https://twitter.com/kiranchavankc"
                 target="blank"
-                style={{ color: "white" }}
               >
                 <AiOutlineTwitter />
               </a>
@@ -64,7 +62,6 @@ function NavBar() {
               <a
                 href="https://linkedin.com/in/kiran-n-chavan"
                 target="blank"
-                style={{ color: "white" }}
               >
                 <FaLinkedinIn />
               </a>
@@ -73,7 +70,6 @@ function NavBar() {
               <a
                 href="https://www.instagram.com/kiran_n_chavan"
                 target="blank"
-                style={{ color: "white" }}
               >
                 <AiFillInstagram />
               </a>
