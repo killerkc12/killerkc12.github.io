@@ -52,7 +52,7 @@ function NavBar() {
             </li>
             <li className="social-icons">
               <a
-                href="https://twitter.com/kiranchavankc"
+                href="https://twitter.com/killerkc12_"
                 target="blank"
               >
                 <AiOutlineTwitter />
@@ -60,7 +60,7 @@ function NavBar() {
             </li>
             <li className="social-icons">
               <a
-                href="https://linkedin.com/in/kiran-n-chavan"
+                href="https://linkedin.com/in/killerkc12"
                 target="blank"
               >
                 <FaLinkedinIn />
@@ -68,7 +68,7 @@ function NavBar() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/kiran_n_chavan"
+                href="https://www.instagram.com/killerkc12"
                 target="blank"
               >
                 <AiFillInstagram />
