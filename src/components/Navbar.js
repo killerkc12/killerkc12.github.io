@@ -46,34 +46,30 @@ function NavBar() {
               <a
                 href="https://github.com/killerkc12"
                 target="blank"
-                style={{ color: "white" }}
               >
                 <AiFillGithub />
               </a>
             </li>
             <li className="social-icons">
               <a
-                href="https://twitter.com/kiranchavankc"
+                href="https://twitter.com/killerkc12_"
                 target="blank"
-                style={{ color: "white" }}
               >
                 <AiOutlineTwitter />
               </a>
             </li>
             <li className="social-icons">
               <a
-                href="https://linkedin.com/in/kiran-n-chavan"
+                href="https://linkedin.com/in/killerkc12"
                 target="blank"
-                style={{ color: "white" }}
               >
                 <FaLinkedinIn />
               </a>
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/kiran_n_chavan"
+                href="https://www.instagram.com/killerkc12"
                 target="blank"
-                style={{ color: "white" }}
               >
                 <AiFillInstagram />
               </a>
