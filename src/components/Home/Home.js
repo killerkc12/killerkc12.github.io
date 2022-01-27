@@ -1,18 +1,16 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import homeLogo from "../../Assets/home-main.svg";
-import homeLogo from '../../Assets/kiran2.png'
+import mypic from '../../Assets/kiran1111.png'
 import { db } from "../../firebase";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Cookies from 'js-cookie'
+import SocialMediaIcons from "../SocialMedia/SocialMediaIcons";
 
 function Home() {
 
   useEffect(()=> {
-
-      console.log("helo")
-
       if(!Cookies.get("visitors")){
         db.collection("visitorCounter").doc("one").get().then(snap=>{
             console.log(snap.data().count,"========================")
@@ -46,11 +44,16 @@ function Home() {
               <h1 className="heading-name">
                 I'M
                 <strong className="main-name"> Kiran N Chavan</strong>
+                <p style={{background:"black", width:"400px", color:"white", padding:"5px",
+                    marginTop:"25px"}}>
+                Connect with me -
+              </p>
               </h1>
+              <SocialMediaIcons/>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 10 }}>
-              <img src={homeLogo} alt="home pic" className="img-fluid" />
+            <Col md={5} style={{ paddingBottom: 10, borderRadius:"50%", background:"black"}}>
+              <img src={mypic} alt="home pic" className="img-fluid" style={{borderRadius:"50%", background:"white"}} />
             </Col>
           </Row>
         </Container>

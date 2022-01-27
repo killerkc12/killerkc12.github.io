@@ -26,15 +26,20 @@ function App() {
   return (
     <Router>
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
-        <Switch>
+        {/* <Navbar /> */}
+        <Home />
+        <About />
+        <Projects />
+        <Designs />
+        <Contact />
+        {/* <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/project" component={Projects} />
           <Route path="/design" component={Designs} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
-        </Switch>
-        <Footer />
+        </Switch> */}
+        {/* <Footer /> */}
       </div>
     </Router>
   );

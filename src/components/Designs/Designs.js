@@ -38,7 +38,7 @@ function Projects() {
               />
           </Col>
           <Col md={6}>
-            <DesignCards name="KFC" img1={kfc1} img2={kfc2} img3={kfc3} img4={kfc4}
+            <DesignCards name="KFC" img1={kfc1} 
                 github="https://github.com/killerkc12/KFC" hosted="https://killerkc12.github.io/KFC/"
               />
           </Col>
