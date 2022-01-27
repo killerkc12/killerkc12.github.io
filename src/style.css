@@ -284,6 +284,10 @@ html {
   }
   .home-header{
     padding-top: 10px !important;
+    padding-bottom: 20px !important;
+  }
+  .home-content {
+    padding: 5rem 0 2rem !important;
   }
 }
 

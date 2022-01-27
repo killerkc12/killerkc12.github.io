@@ -44,10 +44,6 @@ function Home() {
               <h1 className="heading-name">
                 I'M
                 <strong className="main-name"> Kiran N Chavan</strong>
-                <p style={{background:"black", width:"400px", color:"white", padding:"5px",
-                    marginTop:"25px"}}>
-                Connect with me -
-              </p>
               </h1>
               <SocialMediaIcons/>
             </Col>
