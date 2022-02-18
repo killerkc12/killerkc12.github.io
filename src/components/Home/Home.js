@@ -47,8 +47,7 @@ function Home() {
               </h1>
               <SocialMediaIcons/>
             </Col>
-
-            <Col md={5} style={{ paddingBottom: 10, borderRadius:"50%", background:"black"}}>
+            <Col md={5} style={{ paddingBottom: 10, borderRadius:"50%", boxShadow:"0px 5px 4px 1px #ccc"}}>
               <img src={mypic} alt="home pic" className="img-fluid" style={{borderRadius:"50%", background:"white"}} />
             </Col>
           </Row>

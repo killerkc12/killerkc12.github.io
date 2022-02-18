@@ -334,7 +334,9 @@ html {
 /* --------- */
 .footer {
   /* position: fixed; */
-  background-color: var(--imp-back-color);
+  background: var(--white-color);
+  color: #fff;
+  /* background: #f50057; */
   bottom: 0 !important;
   padding: 5px;
   box-shadow:4px 4px 4px 4px var(--black-color);
@@ -361,7 +363,7 @@ html {
 
 .footer h3 {
   font-size: 1em;
-  color: var(--black-color) !important;
+  color: #fff !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
