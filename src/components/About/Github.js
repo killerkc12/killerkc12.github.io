@@ -19,6 +19,7 @@ function Github() {
       </h1>
       <GitHubCalendar
         username="killerkc12"
+        year={new Date().getFullYear()}
         blockSize={15}
         blockMargin={5}
         theme={colourTheme}

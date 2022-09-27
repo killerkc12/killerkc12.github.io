@@ -15,7 +15,6 @@ function Footer() {
     else
     {
         db.collection("visitorCounter").doc("one").get().then(snap=>{
-          console.log(snap.data().count,"========================")
           setCount(snap.data().count)
         })
     }

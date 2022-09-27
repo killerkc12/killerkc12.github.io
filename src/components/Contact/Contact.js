@@ -26,18 +26,13 @@ function Contact() {
                 info
             })
             .then(data=>{
-                console.log(data)
                 toast.success("Mail Sent Successfully!")
                 toast.success("We'll get back to you")
             })
             .catch(err=>{
-                console.log(err)
                 toast.error("Failed to send Mail!")
             })
         }
-        
-        console.log(info)
-        
     }
 
     

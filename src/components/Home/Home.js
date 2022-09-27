@@ -13,13 +13,11 @@ function Home() {
   useEffect(()=> {
       if(!Cookies.get("visitors")){
         db.collection("visitorCounter").doc("one").get().then(snap=>{
-            console.log(snap.data().count,"========================")
             var cnt = snap.data().count
             Cookies.set("visitors",cnt+1)
                 db.collection("visitorCounter").doc("one").update({
                     count: cnt + 1
                 }).then(()=>{
-                    console.log("Count Increased")
                 }).catch((err)=>{
                     console.log(err)
                 })

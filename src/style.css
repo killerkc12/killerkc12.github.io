@@ -47,13 +47,13 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--white-color);
+  background: #000;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--white-color);
+  background: #000;
 }
 
 /* Scroll bar end  */
@@ -334,7 +334,7 @@ html {
 /* --------- */
 .footer {
   /* position: fixed; */
-  background: var(--white-color);
+  background: #000;
   color: #fff;
   /* background: #f50057; */
   bottom: 0 !important;
@@ -360,6 +360,17 @@ html {
     text-align: center !important;
   }
 }
+
+/* @media (max-width: 767px) { */
+  .footer-icons {
+    background: #000;
+    border-radius: 33px;
+    max-width: 380px;
+    margin-left: 40px;
+    padding-left: 64px;
+    margin-top: 40px;
+  }
+/* } */
 
 .footer h3 {
   font-size: 1em;
