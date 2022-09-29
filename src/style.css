@@ -267,7 +267,17 @@ html {
   font-size: 2.5em !important;
   padding-left: 45px !important;
 }
-
+@media (max-width: 767px) {
+  .heading {
+    font-size: 2em !important;
+    padding-left: 30px !important;
+  }
+  .heading-name {
+    font-size: 2em !important;
+    padding-left: 30px !important;
+  }
+}
+  
 .main-name {
   color: var(--imp-text-color)
 }
@@ -327,6 +337,11 @@ html {
   transition: all 0.5s ease-out 0s;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background: #f50057 !important;
+}
+
+.social-icons:hover a {
+  color: #252525 !important;
 }
 
 /* --------- */
@@ -363,14 +378,36 @@ html {
 
 /* @media (max-width: 767px) { */
   .footer-icons {
-    background: #000;
+    background: #252525;
     border-radius: 33px;
     max-width: 380px;
     margin-left: 40px;
     padding-left: 64px;
     margin-top: 40px;
+    box-shadow: 0px 0px 10px 10px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
 /* } */
+
+@media (max-width: 767px) {
+  .footer-icons {
+    background: #252525;
+    border-radius: 33px;
+    max-width: 380px;
+    margin-left: 5px;
+    padding-left: 52px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 10px 10px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
 
 .footer h3 {
   font-size: 1em;
