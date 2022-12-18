@@ -3,13 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import { DiCss3, DiHtml5, DiNodejsSmall, DiReact } from "react-icons/di";
-import { SiBootstrap, SiMongodb, SiMysql, SiPhp, SiSocketdotio } from "react-icons/si";
+import { SiBootstrap, SiMongodb, SiMysql, SiPhp, SiSocketdotio, SiFirebase } from "react-icons/si";
 import { Icon } from '@iconify/react';
 import expressIcon from '@iconify-icons/simple-icons/express';
 
 import oas from '../../Assets/projects/online admission system.png'
 import wma from '../../Assets/projects/web meeting appliction.png'
 import instaClone from '../../Assets/projects/insta-clone.png'
+import taskboard from '../../Assets/projects/taskboard.png'
 
 function Projects() {
 
@@ -21,6 +22,16 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              isHosted= "https://taskboard-killerkc12.vercel.app/"
+              imgPath = {taskboard}
+              title="Task Board Application"
+              tech1 = {<DiReact/>}
+              tech2 = {<SiFirebase/>}
+              link="https://github.com/killerkc12/Taskboard"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               isHosted= "https://web-meeting-application.herokuapp.com/"
