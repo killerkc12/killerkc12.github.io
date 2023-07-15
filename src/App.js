@@ -31,7 +31,7 @@ function App() {
         <About />
         <Projects />
         <Designs />
-        <Contact />
+        {/* <Contact /> */}
         {/* <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/project" component={Projects} />
