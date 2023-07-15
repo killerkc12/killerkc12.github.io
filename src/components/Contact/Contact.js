@@ -22,7 +22,7 @@ function Contact() {
             toast.error("All Fields are Mandatory!")
             return 
         }else{
-            axios.post('https://killerkc12-backend.herokuapp.com/portfolio/sendmail',{
+            axios.post('https://portfolio-backend-killerkc12.vercel.app/portfolio/sendmail',{
                 info
             })
             .then(data=>{
