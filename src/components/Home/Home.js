@@ -1,32 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import homeLogo from "../../Assets/home-main.svg";
 import mypic from '../../Assets/kiran1111.png'
-import { db } from "../../firebase";
 import Particle from "../Particle";
 import Home2 from "./Home2";
-import Cookies from 'js-cookie'
 import SocialMediaIcons from "../SocialMedia/SocialMediaIcons";
 
 function Home() {
 
-  useEffect(()=> {
-      if(!Cookies.get("visitors")){
-        db.collection("visitorCounter").doc("one").get().then(snap=>{
-            var cnt = snap.data().count
-            Cookies.set("visitors",cnt+1)
-                db.collection("visitorCounter").doc("one").update({
-                    count: cnt + 1
-                }).then(()=>{
-                }).catch((err)=>{
-                    console.log(err)
-                })
-        }).catch(err=>{
-            console.log(err)
-        })
-    }
-      
-  },[])
   
   return (
     <section>

@@ -22,24 +22,24 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
-              isHosted= "https://taskboard-killerkc12.vercel.app/"
-              imgPath = {taskboard}
+              isHosted="https://taskboard-killerkc12.vercel.app/"
+              imgPath={taskboard}
               title="Task Board Application"
-              tech1 = {<DiReact/>}
-              tech2 = {<SiFirebase/>}
+              tech1={<DiReact />}
+              tech2={<SiFirebase />}
               link="https://github.com/killerkc12/Taskboard"
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
-              isHosted= "https://web-meeting-application.herokuapp.com/"
-              imgPath = {wma}
+              isHosted="https://web-meeting-application.herokuapp.com/"
+              imgPath={wma}
               title="Web Meeting Application"
-              tech1 = {<DiReact/>}
-              tech2 = {<DiNodejsSmall/>}
-              tech3 = {<SiSocketdotio/>}
+              tech1={<DiReact />}
+              tech2={<DiNodejsSmall />}
+              tech3={<SiSocketdotio />}
               description="
               •Establish the realtime meeting for two or more peoples.
               •Features are Audio and Video Control, Realtime Chat between all people in the room.
@@ -48,30 +48,30 @@ function Projects() {
               link="https://github.com/killerkc12/Web-Meeting-Application"
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
               isHosted={false}
-              imgPath = {oas}
+              imgPath={oas}
               title="Online Admission System"
-              tech1 = {<SiPhp/>}
-              tech2 = {<SiMysql/>}
-              tech3 = {<DiHtml5/>}
-              tech4 = {<DiCss3/>}
-              tech5 = {<SiBootstrap/>}
+              tech1={<SiPhp />}
+              tech2={<SiMysql />}
+              tech3={<DiHtml5 />}
+              tech4={<DiCss3 />}
+              tech5={<SiBootstrap />}
               description="Admin will manage all industry courses and users.
               ▪ User can apply for more than one courses and manage their details"
               link="https://github.com/killerkc12/Online-Admission-System-PHP-MYSQL"
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={instaClone}
               isHosted="https://insta-clone-mern-app.herokuapp.com"
               title="Instagram Clone Web App"
-              tech1 = {<DiReact/>}
-              tech2 = {<DiNodejsSmall/>}
-              tech3 = {<Icon icon={expressIcon} />}
-              tech4 = {<SiMongodb/>}
+              tech1={<DiReact />}
+              tech2={<DiNodejsSmall />}
+              tech3={<Icon icon={expressIcon} />}
+              tech4={<SiMongodb />}
               description="Simple Instagram Clone where users register, log in manage their profile and make the posts."
               link="https://github.com/killerkc12/insta-clone-MERN"
             />

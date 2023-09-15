@@ -6,6 +6,7 @@
   "dependencies": {
     "@iconify-icons/simple-icons": "^1.1.32",
     "@iconify/react": "^1.1.4",
+    "@testing-library/dom": ">=7.21.4",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
@@ -17,6 +18,7 @@
     "js-cookie": "^2.2.1",
     "nodemailer": "^6.6.2",
     "nodemailer-react": "^0.1.0",
+    "popper.js": "^1.16.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
@@ -31,7 +33,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
